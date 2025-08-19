@@ -3,6 +3,7 @@
   position: sticky;
   top: 0;
   z-index: 99;
+  white-space: nowrap;
 }
 
 .header__wrapper {
@@ -21,12 +22,12 @@
 }
 
 .header__navigation {
-  padding: 0 0 0 220px;
+  padding: 0 0 0 200px;
 }
 
 .header__list {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   column-gap: min(60px, 4vw);
 }
@@ -64,4 +65,10 @@
 .header__button svg:hover {
   cursor: pointer;
   stroke: var(--button-hover-color);
+}
+
+@media (max-width: 1000px) {
+  .header__navigation {
+    padding: 0 0 0 10px;
+  }
 }
