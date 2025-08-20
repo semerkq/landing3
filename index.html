@@ -36,13 +36,13 @@
             </ul>
           </nav>
           <div class="header__actions">
-            <button class="header__button" aria-label="search button">
-              <svg>
+            <button class="btn" aria-label="search button">
+              <svg aria-label="search button icon">
                 <use href="assets/sprites.svg#search-icon"></use>
               </svg>
             </button>
-            <button class="header__button" aria-label="search button">
-              <svg>
+            <button class="btn" aria-label="logout button">
+              <svg aria-label="logout button icon">
                 <use href="assets/sprites.svg#logout-icon"></use>
               </svg>
             </button>
@@ -50,6 +50,63 @@
         </div>
       </div>
     </header>
+    <div class="mobile-menu" aria-label="mobile navigation">
+      <div class="mobile-menu__logo">
+        <svg aria-label="logo">
+          <use href="assets/sprites.svg#logo-icon"></use>
+        </svg>
+      </div>
+      <label
+        for="menu-toggler-id"
+        aria-label="open-close mobile navigation menu"
+      >
+        <svg class="mobile-menu__burger" aria-label="burger icon">
+          <use href="assets/sprites.svg#burger-icon"></use>
+        </svg>
+      </label>
+      <input
+        type="checkbox"
+        name="toggler"
+        id="menu-toggler-id"
+        class="mobile-menu__toggler"
+      />
+      <nav class="mobile-menu__navigation">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__list-item">
+            <a href="#" class="mobile-menu__item-link">Продукция</a>
+          </li>
+          <li class="mobile-menu__list-item">
+            <a href="#" class="mobile-menu__item-link">Материалы</a>
+          </li>
+          <li class="mobile-menu__list-item">
+            <a href="#" class="mobile-menu__item-link">О нас</a>
+          </li>
+          <li class="mobile-menu__list-item">
+            <a href="#" class="mobile-menu__item-link">Контакты</a>
+          </li>
+        </ul>
+        <label
+          for="menu-toggler-id"
+          aria-label="open-close mobile navigation menu"
+        >
+          <svg class="mobile-cross" aria-label="cross icon">
+            <use href="assets/sprites.svg#cross-icon"></use>
+          </svg>
+        </label>
+      </nav>
+      <div class="mobile-menu__actions">
+        <button class="btn" aria-label="search button">
+          <svg>
+            <use href="assets/sprites.svg#search-icon"></use>
+          </svg>
+        </button>
+        <button class="btn" aria-label="search button">
+          <svg>
+            <use href="assets/sprites.svg#logout-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <main>
       <section class="hero" aria-label="hero section">
         <div class="container">
@@ -67,7 +124,67 @@
               <button type="button" class="hero__button">Каталог</button>
             </div>
             <div class="hero__image">
-              <img src="assets/webp/hero_image.webp" alt="hero image" />
+              <picture>
+                <source
+                  srcset="assets/webp/hero_image_2.webp"
+                  media="(max-width: 1000px)"
+                />
+                <img src="assets/webp/hero_image.webp" alt="hero image" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="materials" aria-label="materials section">
+        <div class="container">
+          <div class="materials__wrapper">
+            <div class="materials__variants">
+              <div class="variant">
+                <img src="assets/webp/section2_v1.webp" alt="variant 1" />
+                <div class="varian__content">
+                  <h3 class="variant__number">V.1</h3>
+                  <p class="variant__text" aria-label="result description">
+                    Результат вашего обучения
+                  </p>
+                </div>
+              </div>
+              <div class="variant">
+                <img src="assets/webp/section2_v2.webp" alt="variant 2" />
+                <div class="varian__content">
+                  <h3 class="variant__number">V.2</h3>
+                  <p class="variant__text" aria-label="result description">
+                    Результат вашего обучения
+                  </p>
+                </div>
+              </div>
+              <div class="variant">
+                <img src="assets/webp/section2_v3.webp" alt="variant 3" />
+                <div class="varian__content">
+                  <h3 class="variant__number">V.3</h3>
+                  <p class="variant__text" aria-label="result description">
+                    Результат вашего обучения
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="materials__content">
+              <div class="materials__image">
+                <img src="assets/webp/section2_v4.webp" alt="variant 4" />
+              </div>
+              <div class="materiasl__text">
+                <h2 class="material__title">Максимальная белизна</h2>
+                <p class="materials__desc" aria-label="materials description">
+                  Для повышения белизны, гладкости и мягкости в состав бумажной
+                  массы вводят белые минеральные вещества: мел, тальк, каолин и
+                  др. Эта операция называется наполнением.
+                </p>
+                <p class="materials__desc" aria-label="materials description">
+                  Отлив бумажного листа осуществляют на бумагоделательной
+                  машине, важнейшей частью которой является непрерывно
+                  движущаяся (как транспортер) металлическая или капроновая
+                  сетка.
+                </p>
+              </div>
             </div>
           </div>
         </div>
