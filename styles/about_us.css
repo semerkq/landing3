@@ -1,0 +1,25 @@
+.about-us {
+  background-color: var(--bg-gray-color);
+  padding: 90px 0;
+}
+
+.about-us__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1vw;
+  width: 100%;
+}
+
+.about-us__icon {
+  width: 255px;
+  height: 135px;
+}
+
+@media (max-width: 768px) {
+  .about-us__wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+}
