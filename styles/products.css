@@ -1,0 +1,13 @@
+.products {
+  padding: 90px 0;
+  background-color: var(--white-color);
+}
+
+.products__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 40px;
+  flex-wrap: wrap;
+}
