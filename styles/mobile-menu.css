@@ -2,9 +2,6 @@
   display: none;
 }
 
-.mobile-menu__burger {
-}
-
 .mobile-menu__toggler {
   display: none;
 }
@@ -17,7 +14,7 @@
   background-color: var(--bg-gray-color);
   translate: -100%;
   transition: translate 0s;
-  z-index: 10;
+  z-index: 999;
 }
 
 .mobile-menu__toggler:checked ~ .mobile-menu__navigation {
@@ -31,9 +28,6 @@
   margin: 67px 0 0 15px;
 }
 
-.mobile-menu__list-item {
-}
-
 .mobile-menu__item-link {
   font-size: 18px;
   font-weight: 400;
@@ -44,9 +38,6 @@
   position: absolute;
   top: 15px;
   left: 15px;
-}
-
-.mobile-menu__actions {
 }
 
 @media (max-width: 480px) {

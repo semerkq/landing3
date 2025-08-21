@@ -16,22 +16,24 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <svg class="header__logo" aria-label="logo">
-            <use href="assets/sprites.svg#logo-icon"></use>
-          </svg>
+          <a href="#hero-id">
+            <svg class="header__logo" aria-label="logo">
+              <use href="assets/sprites.svg#logo-icon"></use>
+            </svg>
+          </a>
           <nav class="header__navigation">
             <ul class="header__list">
               <li class="header__list-item">
-                <a href="#" class="header__item-link">Продукция</a>
+                <a href="#products-id" class="header__item-link">Продукция</a>
               </li>
               <li class="header__list-item">
-                <a href="#" class="header__item-link">Материалы</a>
+                <a href="#materials-id" class="header__item-link">Материалы</a>
               </li>
               <li class="header__list-item">
-                <a href="#" class="header__item-link">О нас</a>
+                <a href="#about-us" class="header__item-link">О нас</a>
               </li>
               <li class="header__list-item">
-                <a href="#" class="header__item-link">Контакты</a>
+                <a href="#contacts-id" class="header__item-link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -52,9 +54,11 @@
     </header>
     <div class="mobile-menu" aria-label="mobile navigation">
       <div class="mobile-menu__logo">
-        <svg aria-label="logo">
-          <use href="assets/sprites.svg#logo-icon"></use>
-        </svg>
+        <a href="#hero-id">
+          <svg aria-label="logo">
+            <use href="assets/sprites.svg#logo-icon"></use>
+          </svg>
+        </a>
       </div>
       <label
         for="menu-toggler-id"
@@ -73,16 +77,16 @@
       <nav class="mobile-menu__navigation">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__list-item">
-            <a href="#" class="mobile-menu__item-link">Продукция</a>
+            <a href="#products-id" class="mobile-menu__item-link">Продукция</a>
           </li>
           <li class="mobile-menu__list-item">
-            <a href="#" class="mobile-menu__item-link">Материалы</a>
+            <a href="#materials-id" class="mobile-menu__item-link">Материалы</a>
           </li>
           <li class="mobile-menu__list-item">
-            <a href="#" class="mobile-menu__item-link">О нас</a>
+            <a href="#about-us" class="mobile-menu__item-link">О нас</a>
           </li>
           <li class="mobile-menu__list-item">
-            <a href="#" class="mobile-menu__item-link">Контакты</a>
+            <a href="#contacts-id" class="mobile-menu__item-link">Контакты</a>
           </li>
         </ul>
         <label
@@ -108,7 +112,7 @@
       </div>
     </div>
     <main>
-      <section class="hero" aria-label="hero section">
+      <section class="hero" aria-label="hero section" id="hero-id">
         <div class="container">
           <div class="hero__wrapper">
             <div class="hero__content">
@@ -121,7 +125,7 @@
                 считается иранский) — волокнистый материал с минеральными
                 добавками.
               </p>
-              <button type="button" class="hero__button">Каталог</button>
+              <button type="button" class="big-btn">Каталог</button>
             </div>
             <div class="hero__image">
               <picture>
@@ -135,7 +139,11 @@
           </div>
         </div>
       </section>
-      <section class="materials" aria-label="materials section">
+      <section
+        class="materials"
+        aria-label="materials section"
+        id="materials-id"
+      >
         <div class="container">
           <div class="materials__wrapper">
             <div class="materials__variants">
@@ -189,7 +197,7 @@
           </div>
         </div>
       </section>
-      <section class="products" aria-label="products section">
+      <section class="products" aria-label="products section" id="products-id">
         <div class="container">
           <div class="products__wrapper">
             <div class="card">
@@ -271,24 +279,79 @@
           </div>
         </div>
       </section>
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <div class="container">
           <div class="about-us__wrapper">
-            <svg class="about-us__icon">
+            <svg class="about-us__icon" aria-label="hahnemuhle icon">
               <use href="assets/sprites.svg#hahnemuhle-icon"></use>
             </svg>
-            <svg class="about-us__icon">
+            <svg class="about-us__icon" aria-label="canson icon">
               <use href="assets/sprites.svg#canson-icon"></use>
             </svg>
-            <svg class="about-us__icon">
+            <svg class="about-us__icon" aria-label="royal icon">
               <use href="assets/sprites.svg#royal-icon"></use>
             </svg>
-            <svg class="about-us__icon">
+            <svg class="about-us__icon" aria-label="fabriano icon">
               <use href="assets/sprites.svg#fabriano-icon"></use>
             </svg>
           </div>
         </div>
       </section>
+      <section class="sketchbook" aria-label="sketchbook section">
+        <div class="container">
+          <div class="sketchbook__wrapper">
+            <div class="sketchbook__content">
+              <h2 class="sketchbook__title">Simple скетчбук</h2>
+              <p class="sketchbook__desc">
+                80 листов, твердая обложка, бумага Fabriano 200 г/м2. Подойдет и
+                для графики и для акварели. Для самых смелых творческих
+                замыслов!
+              </p>
+              <button type="button" class="big-btn">Купить</button>
+            </div>
+            <picture>
+              <source
+                srcset="assets/webp/sketchbook3.webp"
+                media="(max-width: 630px)"
+              />
+              <source
+                srcset="assets/webp/sketchbook2.webp"
+                media="(max-width: 1070px)"
+              />
+              <img
+                src="assets/webp/last_section.webp"
+                alt="sketchbook image"
+                class="sketchbook__image"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer" aria-label="footer">
+      <div class="container">
+        <div class="footer__wrapper" id="contacts-id">
+          <a href="#hero-id">
+            <svg class="footer__logo" aria-label="logo">
+              <use href="assets/sprites.svg#white-logo-icon"></use>
+            </svg>
+          </a>
+          <div class="footer__contacts">
+            <svg aria-label="facebook icon">
+              <use href="assets/sprites.svg#facebook-icon"></use>
+            </svg>
+            <svg aria-label="twitter icon">
+              <use href="assets/sprites.svg#twitter-icon"></use>
+            </svg>
+            <svg aria-label="instagram icon">
+              <use href="assets/sprites.svg#instagram-icon"></use>
+            </svg>
+            <svg aria-label="youtube icon">
+              <use href="assets/sprites.svg#youtube-icon"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
